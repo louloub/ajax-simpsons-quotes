@@ -13,6 +13,7 @@ function fetchSimpsonJSON() {
             // Build a block of HTML
             const simpsonHtml = `
                 <p><strong>${simpson[0].character}</strong></p>
+                <p>${simpson[0].quote}</p>
                 <img src="${simpson[0].image}" />`;
             document.querySelector('#simpson').innerHTML = simpsonHtml;
         });
